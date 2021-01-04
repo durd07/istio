@@ -333,6 +333,10 @@ import (
 	_ "github.com/envoyproxy/go-control-plane/pkg/test/v2"
 	_ "github.com/envoyproxy/go-control-plane/pkg/test/v3"
 
+	_ "github.com/durd07/go-control-plane/envoy/extensions/filters/network/sip_proxy/filters/ratelimit/v3"
+	_ "github.com/durd07/go-control-plane/envoy/extensions/filters/network/sip_proxy/v3"
+	_ "github.com/durd07/go-control-plane/envoy/extensions/filters/network/sip_proxy/v4alpha"
+
 	// Istio-specific Envoy filters
 	_ "istio.io/istio/pkg/envoy/config/filter/http/alpn/v2alpha1"
 	_ "istio.io/istio/pkg/envoy/config/filter/http/authn/v2alpha1"
