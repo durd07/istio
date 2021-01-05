@@ -36,7 +36,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/envoyproxy/go-control-plane v0.9.8-0.20201019204000-12785f608982
-	github.com/durd07/go-control-plane v0.9.8-0.20201019204000-12785f608982
+	github.com/durd07/go-control-plane v0.9.11
 	github.com/evanphx/json-patch v4.9.0+incompatible
 	github.com/fatih/color v1.9.0
 	github.com/fsnotify/fsnotify v1.4.9
