@@ -590,6 +590,15 @@ func filterChainMatch(fc *xdslistener.FilterChain, cp *model.EnvoyFilterConfigPa
 	if match == nil {
 		return true
 	}
+
+	//niefei
+	if match.Name != fc.Name {
+		log.Debugf("EnvoyFilter filterChainMatch %v is NOT matched.", fc)
+		return false
+	} else {
+		log.Debugf("EnvoyFilter filterChainMatch %v is matched.", fc)
+	}
+
 	if match.Sni != "" {
 		if fc.FilterChainMatch == nil || len(fc.FilterChainMatch.ServerNames) == 0 {
 			return false
