@@ -562,6 +562,11 @@ func filterChainMatch(fc *xdslistener.FilterChain, cp *model.EnvoyFilterConfigPa
 	if match == nil {
 		return true
 	}
+
+  if match.Name != fc.Name {
+    return false
+  }
+
 	if match.Sni != "" {
 		if fc.FilterChainMatch == nil || len(fc.FilterChainMatch.ServerNames) == 0 {
 			return false
